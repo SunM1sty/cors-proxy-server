@@ -12,4 +12,4 @@ RUN npm install
 
 EXPOSE 8080/tcp
 
-CMD ["/bin/sh", "-c", "node", "index.js"]
+CMD ["node", "index.js"]
