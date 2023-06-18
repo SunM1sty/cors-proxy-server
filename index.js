@@ -29,27 +29,25 @@ var getClientAddress = function (req) {
 function wrongURI(res) {
   res.setHeader('Content-type', 'text/html');
   res.writeHead(404);
-  res.end('<h1>Wrong request.</h1><p>For more info check out the spec:' +
-  ' <a href="https://github.com/messier31/cors-proxy-spec">https://github.com/messier31/cors-proxy-spec</a></p>');
+  res.end()
 }
 
 function banner(res) {
   res.setHeader('Content-type', 'text/html');
   res.writeHead(200);
-  res.end('<h1>CORS PROXY SERVER</h1><p><a href="https://github.com/messier31/cors-proxy-server">' +
-    'https://github.com/messier31/cors-proxy-server</a></p>');
+  res.end()
 }
 
 function limitExceed(res) {
   res.setHeader('Content-type', 'text/html');
   res.writeHead(403);
-  res.end('<h1>Limit Exceed.</h1><p>Exceed limit of '+ sizeLimit + ' bytes.</p>');
+  res.end()
 }
 
 function limitRequestsBanner(res) {
   res.setHeader('Content-type', 'text/html');
   res.writeHead(429);
-  res.end('<h1>Requests Limit.</h1><p>Exceed limit of '+ requestsLimit + ' requests per 10sec.</p>');
+  res.end()
 }
 
 function limitRequests(req, time) {

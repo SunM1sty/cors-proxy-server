@@ -1,0 +1,12 @@
+version: '3'
+services:
+  proxy:
+    build:
+      context:  .
+    env_file:
+      - .env
+    volumes:
+      - /node_modules
+    ports:
+      - 8000:8081
+    command: node index.js
