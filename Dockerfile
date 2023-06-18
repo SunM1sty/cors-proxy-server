@@ -9,3 +9,5 @@ COPY .env ./
 
 
 RUN npm install
+
+EXPOSE 80/tcp
