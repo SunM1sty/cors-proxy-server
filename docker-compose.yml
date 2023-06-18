@@ -8,5 +8,6 @@ services:
     volumes:
       - /node_modules
     ports:
-      - 80:80
+      - 81:81
     command: node index.js
+    restart: always

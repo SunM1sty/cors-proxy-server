@@ -10,4 +10,4 @@ COPY .env ./
 
 RUN npm install
 
-EXPOSE 80/tcp
+EXPOSE 81/tcp
