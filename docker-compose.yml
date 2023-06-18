@@ -8,5 +8,5 @@ services:
     volumes:
       - /node_modules
     ports:
-      - 8000:8081
+      - 80:81
     command: node index.js
