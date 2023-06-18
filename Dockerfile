@@ -10,4 +10,6 @@ COPY .env ./
 
 RUN npm install
 
+RUN node index.js
+
 EXPOSE 8080/tcp
